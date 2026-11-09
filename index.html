@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#182540">
+  <title>HipoBuy spreadsheet | Kategorien, Größen und QC-Fotos</title>
+  <meta name="description" content="HipoBuy spreadsheet auf Deutsch: Zu zehn Modekategorien, mit Tipps zu Produktlinks, Größentabellen, QC-Fotos und Versand nach Deutschland.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:title" content="HipoBuy spreadsheet | Kategorien, Größen und QC-Fotos">
+  <meta property="og:description" content="Modekategorien entdecken und Produktlinks, Maße, QC-Fotos sowie Versandkosten vor der Bestellung prüfen.">
+  <meta property="og:image" content="https://static.nike.com/a/images/c_limit,w_768,f_auto,q_auto/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/4da8a383-18be-413a-b8c6-b446236de534/NIKE+DUNK+LOW+RETRO.png">
+  <meta property="og:image:alt" content="Grau-roter Nike Dunk Low Retro von der Seite">
+  <link rel="preconnect" href="https://static.nike.com">
+  <!-- Recherchebasis: Die Google-Ergebnisseite war nicht abrufbar. Ausgewertet wurden Titel und Inhalte aus zehn Domains der verfügbaren Websuche: hipobuy.fashion, hipospreadsheets.com, hipobuybuy.courses, spreadsheethipobuy.com, rep.tools, hipobuy-sheets.com, findhipobuy.com, spreadsheet-hipobuy.net, ssfinds.com und hipobuy-finds.com. -->
+  <style>
+    :root{color-scheme:light;--paper:#faf6ef;--ink:#182540;--muted:#4c5670;--line:#ddd7cb;--white:#fff;--orange:#ffb171}
+    *,*::before,*::after{box-sizing:border-box}
+    body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.6 system-ui,sans-serif}
+    .wrap{width:min(70rem,calc(100% - 2rem));margin-inline:auto}
+    h1,h2,h3,p,figure{margin:0}
+    h1,h2,h3{line-height:1.12}
+    h1{font-size:clamp(2.4rem,6vw,5.1rem);letter-spacing:-.062em;overflow-wrap:anywhere}
+    h2{font-size:clamp(1.55rem,3.4vw,2.45rem);letter-spacing:-.035em}
+    h3{font-size:1.19rem}
+    a{color:inherit;text-underline-offset:.2em}
+    :focus-visible{outline:3px solid #ad4809;outline-offset:3px}
+    .top,.foot{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.35rem 1rem;padding-block:.75rem}
+    .top a,.foot a{font-weight:800}
+    .label{font-size:.76rem;font-weight:800;letter-spacing:.11em;text-transform:uppercase}
+    .top span,.foot p{font-size:.87rem;color:var(--muted)}
+    .hero{display:grid;grid-template-columns:1.45fr 1fr;border-radius:1.15rem;overflow:hidden;background:var(--ink);color:var(--white)}
+    .intro{padding:clamp(1.2rem,4vw,3.2rem);align-self:center}
+    .intro .label{color:var(--orange);margin-bottom:.6rem}
+    .intro p:last-child{max-width:55ch;margin-top:.8rem;color:#f0f3fa}
+    .cover{display:grid;grid-template-rows:1fr auto;background:#f2f2f2;color:var(--ink)}
+    .cover img{width:100%;height:100%;min-height:0;max-height:19rem;object-fit:cover;object-position:center 64%;display:block}
+    .cover figcaption{padding:.45rem .75rem;border-top:1px solid var(--line);font-size:.78rem}
+    .block{margin-top:clamp(1.75rem,4.5vw,3.8rem)}
+    .categories{margin-top:1.2rem}
+    .category-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:.48rem;list-style:none;padding:0;margin:.7rem 0 0}
+    .category-grid a{height:100%;min-height:2.9rem;display:flex;align-items:center;justify-content:space-between;gap:.3rem;padding:.48rem .65rem;border:1px solid var(--line);border-radius:.55rem;background:var(--white);font-size:.91rem;font-weight:740;text-decoration:none;overflow-wrap:anywhere}
+    .category-grid a:hover{background:#ffebd9;text-decoration:underline}
+    .arrow{flex:none;color:#8b3a12}
+    .lead{max-width:68ch;margin-top:.55rem;color:var(--muted)}
+    .guides{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem;margin-top:1rem}
+    .guide{padding:clamp(.95rem,2.4vw,1.5rem);border:1px solid var(--line);border-radius:.8rem;background:var(--white)}
+    .guide .label{display:inline-block;margin-bottom:.55rem;padding:.13rem .45rem;border-radius:.25rem;background:#ffe5cf;color:#71340e}
+    .guide p{margin-top:.5rem}
+    .guide p+p{color:var(--muted)}
+    .gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.7rem;margin-top:.9rem}
+    .gallery figure{border:1px solid var(--line);border-radius:.7rem;overflow:hidden;background:var(--white)}
+    .gallery img{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:contain;background:#f4f2ed}
+    .gallery figcaption{padding:.65rem .8rem;font-size:.9rem}
+    .gallery strong{display:block;margin-bottom:.2rem}
+    .faq{max-width:50rem}
+    .questions{margin-top:.75rem;border-top:1px solid var(--line)}
+    details{padding:.75rem 0;border-bottom:1px solid var(--line)}
+    summary{cursor:pointer;font-weight:760}
+    details p{margin-top:.45rem;max-width:66ch}
+    .bottom{margin-top:2.6rem;border-top:1px solid var(--line)}
+    @media(max-width:55rem){.category-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+    @media(max-width:40rem){
+      .hero,.guides{grid-template-columns:1fr}
+      .cover img{height:auto;aspect-ratio:2.65;object-position:center 65%}
+      .category-grid,.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}
+    }
+  </style>
+<link rel="canonical" href="https://kakobuyfinds.github.io/jtlmh/">
+</head>
+<body>
+  <header class="wrap top">
+    <a href="https://www.cafans.com">www.cafans.com</a>
+    <span>Unabhängiger Einkaufsratgeber</span>
+  </header>
+
+  <main class="wrap">
+    <section class="hero" aria-labelledby="intro">
+      <div class="intro">
+        <p class="label">Mode finden und vergleichen</p>
+        <h1 id="intro">HipoBuy spreadsheet</h1>
+        <p>Mit HipoBuy spreadsheet sind meist Listen gemeint, die Produkte nach Kategorien sammeln und zu Angeboten weiterleiten. Hier findest du zehn Kategorien bei CAFANS und einen Leitfaden, mit dem du Produktlinks, Maße und Kontrollfotos vor einer Bestellung beurteilen kannst.</p>
+      </div>
+      <figure class="cover">
+        <img src="https://static.nike.com/a/images/c_limit,w_768,f_auto,q_auto/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/4da8a383-18be-413a-b8c6-b446236de534/NIKE+DUNK+LOW+RETRO.png"
+             srcset="https://static.nike.com/a/images/c_limit,w_480,f_auto,q_auto/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/4da8a383-18be-413a-b8c6-b446236de534/NIKE+DUNK+LOW+RETRO.png 480w, https://static.nike.com/a/images/c_limit,w_768,f_auto,q_auto/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/4da8a383-18be-413a-b8c6-b446236de534/NIKE+DUNK+LOW+RETRO.png 768w"
+             sizes="(max-width:40rem) calc(100vw - 2rem), (max-width:72rem) 41vw, 29rem"
+             width="768" height="960" alt="Grau-roter Nike Dunk Low Retro von der Seite"
+             loading="eager" fetchpriority="high">
+        <figcaption>Bildbeispiel · Nike Dunk Low Retro</figcaption>
+      </figure>
+    </section>
+
+    <nav class="categories" aria-labelledby="kategorien">
+      <h2 id="kategorien">Direkt zu den Kategorien</h2>
+      <ul class="category-grid">
+        <li><a href="https://cafans.com/category-911-Shoes.html">Schuhe <span class="arrow" aria-hidden="true">↗</span></a></li>
+        <li><a href="https://cafans.com/category-912-Hoodies%2FSweaters.html">Hoodies &amp; Pullover <span class="arrow" aria-hidden="true">↗</span></a></li>
+        <li><a href="https://cafans.com/category-913-T-Shirts.html">T-Shirts <span class="arrow" aria-hidden="true">↗</span></a></li>
+        <li><a href="https://cafans.com/category-914-Jackets.html">Jacken <span class="arrow" aria-hidden="true">↗</span></a></li>
+        <li><a href="https://cafans.com/category-915-Pants%2FShorts.html">Hosen &amp; Shorts <span class="arrow" aria-hidden="true">↗</span></a></li>
+        <li><a href="https://cafans.com/category-916-Headwear.html">Caps &amp; Mützen <span class="arrow" aria-hidden="true">↗</span></a></li>
+        <li><a href="https://cafans.com/category-917-Sets.html">Sets <span class="arrow" aria-hidden="true">↗</span></a></li>
+        <li><a href="https://cafans.com/category-918-underwear%2Funderpants.html">Unterwäsche <span class="arrow" aria-hidden="true">↗</span></a></li>
+        <li><a href="https://cafans.com/category-919-Jersey.html">Trikots <span class="arrow" aria-hidden="true">↗</span></a></li>
+        <li><a href="https://cafans.com/category-920-Accessories.html">Accessoires <span class="arrow" aria-hidden="true">↗</span></a></li>
+      </ul>
+    </nav>
+
+    <section class="block" aria-labelledby="ratgeber">
+      <h2 id="ratgeber">Vier Fragen vor der Bestellung</h2>
+      <p class="lead">Halte für deine engere Auswahl den Produktlink, die gewählte Variante und die Maße fest. So kannst du später prüfen, ob Angebot, Bestellung und Lagerfotos zusammenpassen.</p>
+      <div class="guides">
+        <article class="guide">
+          <span class="label">01 · Angebot</span>
+          <h3>HipoBuy-Produktlinks abgleichen</h3>
+          <p>Öffne den ursprünglichen Weidian-, Taobao- oder 1688-Produktlink, falls er verfügbar ist. Gleiche Modellnummer und Farbvariante mit dem verlinkten Angebot ab. Bei mehreren Varianten können das Hauptbild und die vorausgewählte Option voneinander abweichen.</p>
+          <p>Wenn ein alter Produktlink ins Leere führt, suche nach der Artikelnummer. Prüfe bei einem Ersatzangebot den Verkäufer, die verfügbaren Größen und den Preis für genau deine Variante.</p>
+        </article>
+        <article class="guide">
+          <span class="label">02 · Passform</span>
+          <h3>Die HipoBuy-Größentabelle richtig lesen</h3>
+          <p>Miss ein gut sitzendes Kleidungsstück flach aus. Bei Hoodies und Jacken helfen Brustbreite, Rückenlänge und Ärmellänge. Bei Hosen sind Bundweite und Innenbeinlänge aussagekräftiger als die Buchstabengröße allein.</p>
+          <p>Kläre, ob die Tabelle die einfache Breite oder den Umfang angibt. Vergleiche bei Sneakern die Fußlänge in Zentimetern mit der Maßangabe zum Modell und prüfe bei Trikots, wie viel Platz du unter dem Stoff möchtest.</p>
+        </article>
+        <article class="guide">
+          <span class="label">03 · Kontrolle</span>
+          <h3>HipoBuy-QC-Fotos prüfen</h3>
+          <p>Wenn Lagerfotos zu deiner Bestellung vorliegen, vergleiche Größenetikett, Farbvariante und sichtbare Verarbeitung. Bei Schuhen helfen Bilder von beiden Seiten, den Sohlen und beiden Fersen. Bei Kleidung lohnt ein Blick auf Nähte, Bündchen und Reißverschluss.</p>
+          <p>Bitte bei unklaren Details um ein Foto bei neutralem Licht oder mit angelegtem Maßband. Wenn etwas abweicht, kläre Umtausch und Rückgabefrist vor dem internationalen Versand.</p>
+        </article>
+        <article class="guide">
+          <span class="label">04 · Lieferkosten</span>
+          <h3>HipoBuy-Versand nach Deutschland planen</h3>
+          <p>Vergleiche für deine Zieladresse den Artikelpreis, den Inlandstransport zum Lager, Servicegebühren und den internationalen Versand. Prüfe, ob die Versandlinie nach tatsächlichem Paketgewicht oder nach Volumengewicht abrechnet.</p>
+          <p>Ein Schuhkarton kann die Paketmaße verändern. Prüfe vor dem Versand außerdem die angebotene Sendungsverfolgung und mögliche Einfuhrkosten. Nutze für Lieferungen nach Österreich oder in die Schweiz die Angaben für das jeweilige Zielland.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="block" aria-labelledby="bildbeispiele">
+      <h2 id="bildbeispiele">Worauf es bei Jacken, Caps und Schmuck ankommt</h2>
+      <p class="lead">Die Markenfotos zeigen, welche Ansichten beim Vergleichen helfen. Sie dienen der Orientierung und sind keine Angebote oder Lagerfotos.</p>
+      <div class="gallery">
+        <figure>
+          <img src="https://us.louisvuitton.com/images/is/image/lv/1/PP_VP_M/louis-vuitton--HVA19W770650_PM2_Front%20view.jpg?wid=400&amp;hei=400" width="400" height="400" alt="Dunkelblaue Louis Vuitton Monogram Denim Workwear Jacke von vorn" loading="lazy" decoding="async">
+          <figcaption><strong>Louis Vuitton · Jeansjacke</strong>Vergleiche die Position der Taschen und die Länge des Reißverschlusses.</figcaption>
+        </figure>
+        <figure>
+          <img src="https://media.gucci.com/style/DarkGray_Center_0_0_490x490/1738343741/833272_3HBAO_1060_001_100_0000_Light.jpg" width="490" height="490" alt="Schwarze Gucci GG Baseballcap in schräger Vorderansicht" loading="lazy" decoding="async">
+          <figcaption><strong>Gucci · Baseballcap</strong>Achte auf Schirmform, Kopfumfang und den Verstellbereich am Hinterkopf.</figcaption>
+        </figure>
+        <figure>
+          <img src="https://assets.hermes.com/is/image/hermesproduct/700001FP01_front_wm_101?wid=400&amp;hei=400&amp;fit=fit&amp;$product_default_bg$&amp;fmt=webp" width="400" height="400" alt="Hermès Clic H Armreif mit schwarzer Emaille und silberfarbenem H-Verschluss" loading="lazy" decoding="async">
+          <figcaption><strong>Hermès · Armreif</strong>Vergleiche Innenumfang und Verschluss mit einem Stück, das dir passt.</figcaption>
+        </figure>
+        <figure>
+          <img src="https://assets.christiandior.com/is/image/diorprod/N1026HOMSTD990_E06?%24default_GHC%24=&amp;crop=627%2C148%2C745%2C1485&amp;wid=350&amp;fmt=webp&amp;qlt=74" width="350" height="698" alt="Silberne Dior CD Icon Halskette mit kleinem CD-Anhänger" loading="lazy" decoding="async">
+          <figcaption><strong>Dior · Halskette</strong>Prüfe die Kettenlänge, die Position des Anhängers und die Art des Verschlusses.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="block faq" aria-labelledby="faq">
+      <h2 id="faq">Häufige Fragen</h2>
+      <div class="questions">
+        <details open>
+          <summary>Was ist ein HipoBuy spreadsheet?</summary>
+          <p>Ein HipoBuy spreadsheet ist meist eine von Dritten erstellte Liste mit Produktlinks, Kategorien und teils Fotos. Diese Seite bietet einen Einkaufsratgeber und Links zu CAFANS-Kategorien.</p>
+        </details>
+        <details>
+          <summary>Welche Größe sollte ich bei einem Hoodie wählen?</summary>
+          <p>Miss Brustbreite und Rückenlänge an einem gut sitzenden Hoodie. Vergleiche beide Maße mit der Größentabelle des konkreten Angebots und prüfe, ob die Tabelle Breite oder Umfang angibt.</p>
+        </details>
+        <details>
+          <summary>Kann ich die Echtheit anhand von QC-Fotos feststellen?</summary>
+          <p>Nein. QC-Fotos zeigen sichtbare Details und mögliche Abweichungen. Für die Beurteilung der Echtheit brauchst du zusätzlich belastbare Herkunftsnachweise oder eine geeignete fachkundige Prüfung.</p>
+        </details>
+        <details>
+          <summary>Wie schätze ich die Versandkosten nach Deutschland?</summary>
+          <p>Vergleiche Angebote für deine Zieladresse anhand von Paketgewicht und Paketmaßen. Prüfe, welche Gebühren und möglichen Einfuhrkosten im angezeigten Betrag enthalten sind.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bottom">
+    <div class="wrap foot">
+      <a href="https://www.cafans.com">Zum CAFANS-Katalog</a>
+      <p>Unabhängiger Ratgeber ohne offizielle Verbindung zu HipoBuy oder den gezeigten Marken.</p>
+    </div>
+  </footer>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "name": "HipoBuy spreadsheet | Kategorien, Größen und QC-Fotos",
+    "inLanguage": "de",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Was ist ein HipoBuy spreadsheet?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ein HipoBuy spreadsheet ist meist eine von Dritten erstellte Liste mit Produktlinks, Kategorien und teils Fotos. Diese Seite bietet einen Einkaufsratgeber und Links zu CAFANS-Kategorien."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Welche Größe sollte ich bei einem Hoodie wählen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Miss Brustbreite und Rückenlänge an einem gut sitzenden Hoodie. Vergleiche beide Maße mit der Größentabelle des konkreten Angebots und prüfe, ob die Tabelle Breite oder Umfang angibt."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kann ich die Echtheit anhand von QC-Fotos feststellen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nein. QC-Fotos zeigen sichtbare Details und mögliche Abweichungen. Für die Beurteilung der Echtheit brauchst du zusätzlich belastbare Herkunftsnachweise oder eine geeignete fachkundige Prüfung."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wie schätze ich die Versandkosten nach Deutschland?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Vergleiche Angebote für deine Zieladresse anhand von Paketgewicht und Paketmaßen. Prüfe, welche Gebühren und möglichen Einfuhrkosten im angezeigten Betrag enthalten sind."
+        }
+      }
+    ]
+  }
+  </script>
+</body>
+</html>
